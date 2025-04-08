@@ -5,7 +5,7 @@ export function activate(context: vscode.ExtensionContext) {
         const terminal = vscode.window.activeTerminal || vscode.window.createTerminal(`Prolog Run`);
         const file = vscode.window.activeTextEditor?.document.fileName;
         if (file) {
-            terminal.sendText(`swipl -q -f "${file}" -t halt.`);
+            terminal.sendText(`swipl -q -f "${file}"`);
             terminal.show();
         } else {
             vscode.window.showErrorMessage('No active Prolog file.');
