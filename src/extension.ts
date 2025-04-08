@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    let disposable = vscode.commands.registerCommand('prolog-runner.run', () => {
+    let disposable = vscode.commands.registerCommand('mon-prolog-runner.run', () => {
         const terminal = vscode.window.activeTerminal || vscode.window.createTerminal(`Prolog Run`);
         const file = vscode.window.activeTextEditor?.document.fileName;
         if (file) {
