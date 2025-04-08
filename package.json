@@ -1,5 +1,5 @@
 {
-  "name": "prolog-runner",
+  "name": "mon-prolog-runner",
   "displayName": "Prolog Runner",
   "publisher": "eliasgrewe",
   "description": "Runs your prolog code like a script.",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sazzledazzle/prolog-runner.git"
+    "url": "https://github.com/loris2pau/mon-prolog-runner.git"
   },
   "keywords": [
     "prolog",
@@ -27,13 +27,13 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [{
-        "command": "prolog-runner.run",
-        "title": "▶ Run Prolog File"
+        "command": "mon-prolog-runner.run",
+        "title": "▶ Run Prolog File ()"
     }],
     "menus": {
         "editor/title": [{
             "when": "resourceLangId == prolog",
-            "command": "prolog-runner.run",
+            "command": "mon-prolog-runner.run",
             "group": "navigation"
         }]
     }
